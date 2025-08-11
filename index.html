@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modern CV Portfolio</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header Section -->
+        <div class="header-section fade-in">
+            <div class="profile-container">
+                <img src="662110164.jpg" 
+                     alt="Profile Photo" class="profile-img float-animation" />
+            </div>
+            <div class="name-title">
+                <h1>นายภูวนาท ไหวเต็ม</h1>
+                <p>VFX Artist</p>
+            </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-grid fade-in">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>puwanatwaitem07@gmail.com</div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>080-332-7579</div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>พาน, เชียงราย</div>
+            </div>
+            <!-- Removed LinkedIn contact item -->
+        </div>
+
+        <!-- About Section -->
+        <div class="glass-card fade-in">
+            <h3><i class="fas fa-user"></i> About Me</h3>
+            <p class="about-text">
+                นักศึกษาสาขาดิจิทัลเกมที่สนใจการพัฒนา Shader สำหรับการสร้างแสงและเงาภายในเกม 
+                มีทักษะในการใช้ Shader Graph บนโปรแกรม Unity และมีความมุ่งมั่นที่จะเรียนรู้เทคโนโลยีใหม่ ๆ 
+                เพื่อยกระดับคุณภาพงานและให้สอดคล้องกับวิสัยทัศน์ของเกม
+
+
+            </p>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="content-grid">
+            <!-- Left Column -->
+            <div class="content-section">
+                <!-- Education -->
+                <div class="glass-card fade-in">
+                    <h3><i class="fas fa-graduation-cap"></i>Education</h3>
+                    <div class="timeline-item">
+                        <h5>ปริญญาตรี สาขาดิจิทัลเกม</h5>
+                        <div class="subtitle">
+                            <i class="fas fa-university me-2"></i>
+                            วิทยาลัยศิลปะ สื่อ และเทคโนโลยี มหาวิทยาลัยเชียงใหม่
+                        </div>
+                        <div class="subtitle">
+                            <i class="fas fa-calendar me-2"></i>
+                            2023 – ปัจจุบัน
+                        </div>
+                        <p>เรียนรู้และพัฒนาทักษะด้าน Visual Effects (VFX) สำหรับเกม ทั้งแบบ 2D และ 3D</p>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="glass-card fade-in">
+                    <h3><i class="fas fa-tools"></i>Skills</h3>
+                    <div class="skills-container">
+                        <span class="skill-pill">Unity</span>
+                        <span class="skill-pill">Unreal Engine</span>
+                        <span class="skill-pill">Photoshop</span>
+                        <span class="skill-pill">Figma</span>
+                        <span class="skill-pill">C#</span>
+                        <span class="skill-pill">C</span>
+                        <span class="skill-pill">GIT</span>
+                        <span class="skill-pill">Blender</span>
+                        <span class="skill-pill">After Effects</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="content-section">
+                <!-- Projects -->
+                <div class="glass-card fade-in">
+                    <h3><i class="fas fa-code"></i>Projects</h3>
+                    
+                    <div class="timeline-item">
+                        <h5>CMU in the 2077</h5>
+                        <div class="subtitle">
+                            <i class="fas fa-tools me-1"></i>
+                            Unity
+                        </div>
+                        <p>สร้าง Shader Graph และ Visual Effect Graph</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h5>Merry Christmas and Happy New Year 2025</h5>
+                        <div class="subtitle">
+                            <i class="fas fa-tools me-1"></i>
+                            Unity
+                        </div>
+                        <p>พัฒนาและตกแต่งฉากด้วย HDRP Shader Graphs</p>
+                    </div>
+
+                    <!-- Removed Portfolio Website project -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons fade-in">
+            <button class="action-btn" id="viewContactBtn">
+                <i class="fas fa-eye me-2"></i>ดูข้อมูลติดต่อ
+            </button>
+            <button class="action-btn secondary" id="downloadCVBtn">
+                <i class="fas fa-download me-2"></i>ดาวน์โหลด CV
+            </button>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-address-book me-2"></i>ข้อมูลติดต่อทั้งหมด
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-details">
+                        <div class="row mb-3">
+                            <div class="col-sm-4"><strong><i class="fas fa-user me-2"></i>ชื่อ-นามสกุล:</strong></div>
+                            <div class="col-sm-8">นายภูวนาท ไหวเต็ม</div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-4"><strong><i class="fas fa-envelope me-2"></i>อีเมล:</strong></div>
+                            <div class="col-sm-8">puwanatwaitem07@gmail.com</div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-4"><strong><i class="fas fa-phone me-2"></i>โทรศัพท์:</strong></div>
+                            <div class="col-sm-8">080-332-7579</div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-4"><strong><i class="fas fa-map-marker-alt me-2"></i>ที่อยู่:</strong></div>
+                            <div class="col-sm-8">บ้านเลขที่ 171 หมู่ 10 ตำบลป่าหุ่ง อำเภอพาน จังหวัดเชียงราย 57120</div>
+                        </div>
+                        <!-- Removed LinkedIn row -->
+                        <div class="row">
+                            <div class="col-sm-4"><strong><i class="fab fa-github me-2"></i>GitHub:</strong></div>
+                            <div class="col-sm-8">github.com/FanTarLemon</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

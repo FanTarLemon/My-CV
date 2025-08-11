@@ -1,0 +1,316 @@
+/* Custom CSS Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background: #030f0f;
+    min-height: 100vh;
+}
+
+/* ลบ keyframes gradientBG ออก */
+/* 
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+*/
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Glass Card Effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(3,98,76, 1.0);
+    padding: 40px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px 0 rgba(0,223,130,0.5);
+}
+
+/* Header Section */
+.header-section {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    object-fit: cover;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.name-title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.name-title p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* Contact Info Cards */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+.contact-item i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.content-section h3 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-section h3 i {
+    background: linear-gradient(45deg, #095548, #599342);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-pill {
+    background: linear-gradient(45deg, #03624c, #2cc295);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(241,247,247, 0.2);
+}
+
+.skill-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,223,130,0.5);
+}
+
+/* Education & Projects */
+.timeline-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2cc295;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+.timeline-item h5 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.timeline-item .subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+}
+
+
+/* Action Buttons */
+.action-buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.action-btn {
+    background: linear-gradient(45deg, #095548, #599342);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(241,247,247, 0.2);
+}
+
+.action-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0,223,130,0.5);
+    color: white;
+}
+
+.action-btn.secondary {
+    background: linear-gradient(45deg, #095548, #599342);
+    box-shadow: 0 8px 20px rgba(241,247,247, 0.2);
+}
+
+.action-btn.secondary:hover {
+    box-shadow: 0 15px 35px rgba(0,223,130,0.5);
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: linear-gradient(45deg, #095548, #599342);
+    color: white;
+    border: none;
+}
+
+.modal-body {
+    background: #030f0f;
+}
+
+/* About Section */
+.about-text {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .name-title h1 {
+        font-size: 2rem;
+    }
+    
+    .name-title p {
+        font-size: 1.2rem;
+    }
+    
+    .main-container {
+        padding: 20px 15px;
+    }
+    
+    .glass-card {
+        padding: 25px;
+    }
+    
+    .action-btn {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+}
+
+/* Animation for cards */
+.fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Particle animation keyframes - ลบออกหรือไม่ต้องใช้แล้ว */
